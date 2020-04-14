@@ -98,7 +98,7 @@ def Register():
         )
 
 @app.route('/login', methods=['GET', 'POST'])
-def Login():
+def login():
     form = LoginFormStructure(request.form)
 
     if (request.method == 'POST' and form.validate()):
@@ -116,6 +116,7 @@ def Login():
         repository_name='Pandas',
         )
 
+
 df = pd.read_csv("C:\\Users\\User\\source\\repos\\seanproject\\seanproject\\seanproject\\static\\data\\psGames (1).csv")
 @app.route  ('/dataSet')
 def dataSet():
@@ -125,4 +126,23 @@ def dataSet():
         title='dataSet',
         year=datetime.now().year,
         message='My Data Set', data = df.to_html(classes = "table table-hover")
+    )
+@app.route('/data')
+def data():
+    """Renders the contact page."""
+    return render_template(
+        'data.html',
+        title='data',
+        year=datetime.now().year,
+        message='Your contact page.'
+    )
+
+@app.route('/queri')
+def queri():
+    """Renders the about page."""
+    return render_template(
+        'queri.html',
+        title='Queri',
+        year=datetime.now().year,
+        message='My Queri'
     )

@@ -1,11 +1,110 @@
-﻿<!DOCTYPE html>
+﻿{% extends "layout.html" %}
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+{% block content %}
 
-</body>
-</html>
+    <style>
+        body {
+            background-image: url('https://qph.fs.quoracdn.net/main-qimg-07eb162cc223fb94de305a33876c7d4a.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            opacity: 0.9;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+            opacity: 0.9;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+    </style>
+
+<table style="width:100%">
+    <tr>
+        <th>Game</th>
+        <th>Year</th>
+        <th>Genre</th>
+        <th>Publisher</th>
+        <th>North America</th>
+        <th>Europe</th>
+        <th>Japan</th>
+        <th>Rest Of World</th>
+        <th>Global</th>
+    </tr>
+    <tr>
+        <td>The name of the same</td>
+        <td>The year when the game have published</td>
+        <td>The benre of the game (action, platform, racing and more)</td>
+        <td>The game publishers (Activision, Valve, EA, Epic Games, Ubisoft, Sony and much more)</td>
+        <td>The amount of sales in North America counted in millions</td>
+        <td>The amount of sales in Europe counted in millions</td>
+        <td>The amount of sales in Japan counted in millions</td>
+        <td>The amount of sales in the other regions counted in millions</td>
+        <td>The amount of sales in the whole world counted in millions</td>
+    </tr>
+</table>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+</style>
+<button type="button" class="collapsible">DataBase</button>
+<div class="content">
+    <p> {{ data | safe}}</p>
+</div>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+
+
+        {% endblock %}

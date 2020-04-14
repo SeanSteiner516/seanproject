@@ -1,5 +1,5 @@
 """
-This script runs the RoyWebProject2_alternative application using a development server.
+This script runs the seanproject application using a development server.
 """
 
 from os import environ

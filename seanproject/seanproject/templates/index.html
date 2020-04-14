@@ -2,32 +2,53 @@
 
 {% block content %}
 
-<div class="jumbotron">
-    <h1>Flask</h1>
-    <p class="lead">Flask is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
+<style>
+    body {
+        background-image: url('https://techcrunch.com/wp-content/uploads/2019/06/GettyImages-647240320-e1580518154914.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Flask gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://flask.pocoo.org/docs/">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
-    </div>
-</div>
+    table {
+        font-family: arial, sans-serif;
+        width: 100%;
+        background-size: cover;
+        background-color: #cc00cc;
+        text-align: center;
+        padding: 8px;
+        border: 2px solid black;
+        font-family: courier;
+        color: black;
+        align-content: center;
+        border: 2px solid black;
+        opacity: 0.9;
+    }
+
+    td, th {
+        text-align: center;
+        border: 1px solid #dddddd;
+        padding: 15px;
+        opacity: 0.7;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>Contact</th>
+        <th>Introduction</th>
+    </tr>
+    <tr>
+        <td>
+        Link for contact information
+        <a href="{{ url_for('contact') }}">Link to Contact</a></td>
+        <td>
+            Hi my name is Sean Steiner and this is my website porject I created as a school projecy in
+            computer science class, this website is about video games marketing, and this website
+            gives you a huge information about all the games salesments
+            <a href="{{ url_for('about') }}">Link to About</a>
+        </td>
+    </tr>
+</table>
 
 {% endblock %}

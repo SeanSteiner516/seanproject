@@ -1,81 +1,140 @@
-﻿<!DOCTYPE html>
+﻿{% extends "layout.html" %}
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <h3> In the last 42 years there a have been a huge changes in the video games industry from the begging of the game Pong to the very well known popular games of these days</h3>
-    <p>
-        The video game industry was created 42 years ago, by the most famous game that was ever known
-        "PONG", from this year the video games industry also known as the gaming idustry have just
-        kept on developing and improving for each day, even there was a lot of a minimal improvments, for example
-        the game "PacMan" or "Space Invaders" they got colorized, or for another example "Astroids" which gave
-        the player a lot of movment ability in the game space, and there is even the "big" changes have happend, for exmaple
-        from dots and lines into a full size 3D built character, open world maps and so much more. 
-        ____________________________________________________________________________________________
-    </p>
-    <p>
-        The gaming industry in her early years, hasn't had a very big changes, there was only small changes,
-        like a bigger movment space, more colors, more objectives and more..., but even though those was a
-        small improvments they still had a lot of impact on the users, but in these day we are looking at it
-        and say that nah it's not that big of improvment but back than it was a big deal.
-        In the 80's the gaming idustry had a significant leap in its progress and development of a lot of new games,
-        gimmicks, ideas, quality of the games and new famous cartoon character like Mario, Donky Kong, PacMan,
-        Q-Bert, Link and Zelda and much more.
-        In those year there is also a lot of new genres for example the game "Legand Of Zelda" which had
-        an action adveture genre, which was never used or created before.
-        ____________________________________________________________________________________________
-    </p>
-    <p>
-        In the 90's the gaming industry have fluorished when the new genre of "First Person Shooter" games have came
-        out with their first games, for example: "Wolfstein, Doom, system shock, Half-Life and much more". it was really the "Icing on the cake"
-        of the gaming industry, and this genre is continues to flourish in these day with the a lot of new improvments
-        like graphics, game space, character desgin, large maps, a lot of diffrent options for guns or skills
-        and much more than that. but from that decade we've got what we have now.
-        _____________________________________________________________________________________________
-    </p>
-    <p>
-        The 2000's have come and with it have came the most significant makeover in the gaming industry
-        and what I mean by that is that the gaming industry had a lot of improvments in this decade,
-        this decade brought with him new "shiny" consoles (Playstation 2, Xbox and Wii), the 2000's have
-        also brought with a new change into the users, now in the gaming industry there is a huge community which
-        called "Gamers" and inside of this community there is also factions that are separated into genres and gaming ability
-        there was the proffesionals which called as "Pros" and there is the "amateurs" and there is the gamers which aren't
-        the best in the same game and they are called "noobs". By far the 2000's have created a huge community,
-        and brought a lot of changes even for the society, now there is a few gaming conventions which invites
-        gamers all across the worl to come and play together or to see some new games that are about to be published
-        to the community, and much more stuff is hapenning there.
-        The 2000's have also brought the big new changes for the games themselves for example there is now
-        GPU'S which improves the game graphics and quality, there is now a lot of high resolution, and open space
-        in the game, there is a large scale maps, a lot of more new options and missions and storylines
-        for the games, also there  new thing in the gaming industry which called "Online Gaming/ multiplayer"
-        which allows players/ gamers to play with each other all across the world,
-        and the main games that were that successful with those new things were the "Call Of Duty" series, the "Battlefield" series,
-        "CS:GO/ Counter Strike Global Offensive" and there is even much more thing than that.
-        _____________________________________________________________________________________________
-    </p>
-    <p>
-        2010's is here and in this decade there wasn't any new fascinating stuff, except from the new most
-        popular game (Grand Theft Auto V/ GTA V) and the new technollogy that was haded the Virtual Reality headset
-        and the new gimmicks on the new consoles and computers (the touch pads on the PlayStation controller, the controller tracking
-        , the movement observing cameras, water cooling system for computers and even much, much more).
-        In this decade the industry and the community have got in to a new achievements.
-        Also in the 2019 there have been a huge reveal of a new VR (Virtual Reality) headset, which
-        had a new technollogy in the controlles which called "Finger Tracking Mechanism" which observes
-        the amount of preasure you make on the controller and it transmitting the same power/ preasure into
-        the game (if you hold a cola can and you "squeeze your hand/ creates preasure" on the controller
-        it will squeeze the can).
-        _____________________________________________________________________________________________
-    </p>
-    <p>
-        Now we are kefted with the 2020's, all that left for us to do is just to wait and observe the
-        improvement of all of these technollogy development and the new big thing or the next "overkill"
-        game, but the huge difference between 42 years ago until now, the big transformation and improvement
-        which never stops even for a minute and the gaming industry will always try to proceed forward to the next
-        big gimmick that will catch everyone's attention.
-        _____________________________________________________________________________________________
-    </p>
-</body>
-</html>
+{% block content %}
+
+
+    <style>
+        body {
+            background-image: url('https://www.leaderboardarcade.com/wp-content/uploads/2019/11/arcade-2-optimized.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        p {
+            background-color: #333399;
+            background-size: cover;
+            text-align: center;
+            font-family: courier;
+            color: white;
+            opacity: 0.9;
+        }
+        table {
+            background-color: #9933ff;
+            background-size: cover;
+            border: 10px solid black;
+            text-align: center;
+            font-family: courier;
+            color: white;
+            opacity: 0.9;
+        }
+
+        h3 {
+            background-color: #333399;
+            background-size: cover;
+            text-align: center;
+            font-family: courier;
+            color: white;
+            opacity: 0.7;
+        }
+    </style>
+
+<h3> In the last 42 years there a have been a huge changes in the video games industry from the begging of the game Pong to the very well known popular games of these days</h3>
+<p>
+    The video game industry was created 42 years ago, by the most famous game that was ever known
+    "PONG", from this year the video games industry also known as the gaming idustry have just
+    kept on developing and improving for each day, even there was a lot of a minimal improvments, for example
+    the game "PacMan" or "Space Invaders" they got colorized, or for another example "Astroids" which gave
+    the player a lot of movment ability in the game space, and there is even the "big" changes have happend, for exmaple
+    from dots and lines into a full size 3D built character, open world maps and so much more.
+    <img src="https://www.hiig.de/wp-content/uploads/2014/11/Pong1.jpg" width="1140" height="618" float="center" />
+    ______________________________________________________________________________________________________________________________________
+
+    The gaming industry in her early years, hasn't had a very big changes, there was only small changes,
+    like a bigger movment space, more colors, more objectives and more..., but even though those was a
+    small improvments they still had a lot of impact on the users, but in these day we are looking at it
+    and say that nah it's not that big of improvment but back than it was a big deal.
+    In the 80's the gaming idustry had a significant leap in its progress and development of a lot of new games,
+    gimmicks, ideas, quality of the games and new famous cartoon character like Mario, Donky Kong, PacMan,
+    Q-Bert, Link and Zelda and much more.
+    In those year there is also a lot of new genres for example the game "Legand Of Zelda" which had
+    an action adveture genre, which was never used or created before.
+    <img src="https://healthlytalks.com/wp-content/uploads/2020/03/Pacman-Download.png" width="1140" height="618" float="center" />
+    <img src="https://image.winudf.com/v2/image/Y29tLk5ld1N1cGVyLk1hcmlvLkJyb3Nfc2NyZWVuXzRfMTUxODI5MzI2OV8wMzI/screen-4.jpg?fakeurl=1&type=.jpg" width="1140" height="618" float="center" />
+    <img src="https://cdn.gamer-network.net/2016/usgamer/zelda1header.jpg/EG11/thumbnail/1920x1080/format/jpg/quality/65/long-time-coming-finishing-the-original-legend-of-zelda-in-2016.jpg" width="1140" height="618" float="center" />
+    ______________________________________________________________________________________________________________________________________
+
+    In the 90's the gaming industry have fluorished when the new genre of "First Person Shooter" games have came
+    out with their first games, for example: "Wolfstein, Doom, system shock, Half-Life and much more". it was really the "Icing on the cake"
+    of the gaming industry, and this genre is continues to flourish in these day with the a lot of new improvments
+    like graphics, game space, character desgin, large maps, a lot of diffrent options for guns or skills
+    and much more than that. but from that decade we've got what we have now.
+    <img src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Project_Warlock_first_person_shooter_launched_October_2018.jpg" width="1140" height="618" float="center" />
+    <img src="https://sm.ign.com/t/ign_il/screenshot/default/doom-eternal-main-1280x720_dzp3.1280.jpg" width="1140" height="618" float="center" />
+    ______________________________________________________________________________________________________________________________________
+
+    The 2000's have come and with it have came the most significant makeover in the gaming industry
+    and what I mean by that is that the gaming industry had a lot of improvments in this decade,
+    this decade brought with him new "shiny" consoles (Playstation 2, Xbox and Wii), the 2000's have
+    also brought with a new change into the users, now in the gaming industry there is a huge community which
+    called "Gamers" and inside of this community there is also factions that are separated into genres and gaming ability
+    there was the proffesionals which called as "Pros" and there is the "amateurs" and there is the gamers which aren't
+    the best in the same game and they are called "noobs". By far the 2000's have created a huge community,
+    and brought a lot of changes even for the society, now there is a few gaming conventions which invites
+    gamers all across the worl to come and play together or to see some new games that are about to be published
+    to the community, and much more stuff is hapenning there.
+    The 2000's have also brought the big new changes for the games themselves for example there is now
+    GPU'S which improves the game graphics and quality, there is now a lot of high resolution, and open space
+    in the game, there is a large scale maps, a lot of more new options and missions and storylines
+    for the games, also there  new thing in the gaming industry which called "Online Gaming/ multiplayer"
+    which allows players/ gamers to play with each other all across the world,
+    and the main games that were that successful with those new things were the "Call Of Duty" series, the "Battlefield" series,
+    "CS:GO/ Counter Strike Global Offensive" and there is even much more thing than that.
+    <img src="https://cdn.vox-cdn.com/thumbor/a-LnJ6FprXhU4U7JAAeR4JTwjvk=/0x0:1024x1024/1200x800/filters:focal(430x394:592x556)/cdn.vox-cdn.com/uploads/chorus_image/image/66420908/mobile_MarioKartTour_screen_01.0.png" width="1140" height="618" float="center" />
+    <img src="https://res.cloudinary.com/lmn/image/upload/e_sharpen:100/f_auto,fl_lossy,q_auto/v1/gameskinnyop/1/7/f/orig_17f473a40fb976bdf3fdf66144ad5b6f.jpg" width="1140" height="618" float="center" />
+    <img src="https://sm.ign.com/t/ign_il/screenshot/default/e3-1066707_1my1.1280.jpg" width="1140" height="618" float="center" />
+    ______________________________________________________________________________________________________________________________________
+
+    2010's is here and in this decade there wasn't any new fascinating stuff, except from the new most
+    popular game (Grand Theft Auto V/ GTA V) and the new technollogy that was haded the Virtual Reality headset
+    and the new gimmicks on the new consoles and computers (the touch pads on the PlayStation controller, the controller tracking
+    , the movement observing cameras, water cooling system for computers and even much, much more).
+    In this decade the industry and the community have got in to a new achievements.
+    Also in the 2019 there have been a huge reveal of a new VR (Virtual Reality) headset, which
+    had a new technollogy in the controlles which called "Finger Tracking Mechanism" which observes
+    the amount of preasure you make on the controller and it transmitting the same power/ preasure into
+    the game (if you hold a cola can and you "squeeze your hand/ creates preasure" on the controller
+    it will squeeze the can).
+    <img src="https://cdn.mos.cms.futurecdn.net/2d57eac3f9a6e481a4ea777865d16b33.jpg" width="1140" height="618" float="center" />
+    <img src="https://buywithus.org/wp-content/uploads/2020/04/0fe20042_0bb8_4781_82f4_7130f928b021.jpg" width="1140" height="618" float="center" />
+    <img src="https://gamepro.co.il/wp-content/uploads/2013/07/grand-theft-auto-v-%D7%A0%D7%99%D7%AA%D7%95%D7%97-%D7%92%D7%99%D7%99%D7%9E%D7%A4%D7%9C%D7%99%D7%99.jpg" width="1140" height="618" float="center" />
+    <img src="https://fixingport.com/wp-content/uploads/2019/11/Best-Liquid-Cooling-System-For-Gaming-PC.jpg" width="1140" height="618" float="center" />
+    <img src="https://vrgear.com/wp-content/uploads/2019/06/hntZcxbmqCTPYBUjjHpeYj.jpg" width="1140" height="618" float="center" />
+    ______________________________________________________________________________________________________________________________________
+
+    Now we are kefted with the 2020's, all that left for us to do is just to wait and observe the
+    improvement of all of these technollogy development and the new big thing or the next "overkill"
+    game, but the huge difference between 42 years ago until now, the big transformation and improvement
+    which never stops even for a minute and the gaming industry will always try to proceed forward to the next
+    big gimmick that will catch everyone's attention.
+</p>
+<img src="https://i1.wp.com/academycenter.org/wp-content/uploads/2018/12/back-to-the-future-trilogy-1122951-1280x0.jpg" width="1140" height="618"float="center" />
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td> Data Base name </td>
+            <td> Explenation</td>
+            <td> Link</td>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr>
+            <td>Video Games marketing</td>
+            <td>Video Games marketing DataSet </td>
+            <td> <a href="{{ url_for('dataSet') }}">Link to the DataBase</a></td>
+        </tr>
+    </tbody>
+</table>
+
+        {% endblock %}

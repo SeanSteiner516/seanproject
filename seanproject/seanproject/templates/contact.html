@@ -2,17 +2,59 @@
 
 {% block content %}
 
+<style>
+
+    body {
+        background-image: url('https://www.medibrane.com/wp-content/uploads/2015/03/contact.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    adress1 {
+        background-color: #00ccff;
+        background-size: cover;
+        text-align: left;
+        font-family: courier;
+        color: black;
+        opacity: 0.7;
+    }
+    h2 {
+        background-color: #00ccff;
+        background-size: cover;
+        text-align: left;
+        font-family: courier;
+        color: black;
+        opacity: 0.7;
+    }
+
+    h3 {
+        background-color: #00ccff;
+        background-size: cover;
+        text-align: left;
+        font-family: courier;
+        color: black;
+        opacity: 0.7;
+    }
+    adress2 {
+        background-color: #00ccff;
+        background-size: cover;
+        text-align: left;
+        font-family: courier;
+        color: black;
+    }
+</style>
+
 <h2>{{ title }}.</h2>
 <h3>{{ message }}</h3>
 
-<address>
+<address1>
     Tichonet<br />
     Tel Aviv, Israel<br />
     <abbr title="Phone">P:0543367633</abbr>
-</address>
+</address1>
 
-<address>
+<address2>
     <strong>email:</strong>   <a href="mailto:seaniko2004@gmail.com">seaniko2004@gmail.com</a><br />
-</address>
+</address2>
 
 {% endblock %}
